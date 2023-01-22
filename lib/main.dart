@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         fontFamily: GoogleFonts.lato().fontFamily,
       ),
-      initialRoute: '/',
+      initialRoute: MyRoutes.homeRoute,
       routes: {
         '/': (context) => const Login(), 
         MyRoutes.homeRoute: (context) => const HomePage(),

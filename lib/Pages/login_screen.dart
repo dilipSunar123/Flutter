@@ -88,6 +88,8 @@ class _LoginState extends State<Login> {
                         validator: (value) {
                           if (value!.isEmpty) {
                             return 'Password cannot be empty!';
+                          } else if (value.length < 6) {
+                            return 'Password length should be atleast 6';
                           }
                           return null;
                         },
@@ -106,7 +108,7 @@ class _LoginState extends State<Login> {
                                   Icons.done,
                                   color: Colors.white,
                                 )
-                              : Text(
+                              : const Text(
                                   'Login',
                                   style: TextStyle(
                                     color: Colors.white,

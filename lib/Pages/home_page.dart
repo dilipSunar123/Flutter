@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_app/widgets/drawer.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -15,9 +16,9 @@ class _HomePageState extends State<HomePage> {
         title: const Text('Home Screen'),
       ),
       body: const Center(
-        child: Text('Home Screen')
+        child: Text('Home Screen'),
       ),
-      drawer: const Drawer(),
+      drawer: const MyDrawer(),
     );
   }
 }
